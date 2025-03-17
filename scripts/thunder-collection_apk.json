@@ -1,0 +1,343 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Mallorquina",
+    "collectionId": "1e7c61d6-ebf4-4e56-be37-d93e3563d8f5",
+    "dateExported": "2025-02-04T18:30:30.805Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "7289e952-e16f-4df3-b4aa-5494f0d7dd66",
+            "colId": "1e7c61d6-ebf4-4e56-be37-d93e3563d8f5",
+            "containerId": "",
+            "name": "mll_carga_prod_erp",
+            "url": "http://127.0.0.1:8000/mallorquina/mll_carga_prod_erp?id_App=63&user=usuario_dev&ret_code=0&ret_txt=\"OK\"&origen_path=productos.xlsx",
+            "method": "GET",
+            "sortNum": 39.1,
+            "created": "2025-01-05T13:51:15.098Z",
+            "modified": "2025-01-25T09:18:30.564Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGVzYXJyb2xsbyIsImlkX0FwcCI6MSwiZXhwIjoxNzM3MDI3NTUxfQ.uQvN9U8RqD5aD25FGNn5daZPCMqHsYPX4XbY0bpOkd4"
+                }
+            ],
+            "params": [
+                {
+                    "name": "id_App",
+                    "value": "63",
+                    "isPath": false
+                },
+                {
+                    "name": "user",
+                    "value": "usuario_dev",
+                    "isPath": false
+                },
+                {
+                    "name": "ret_code",
+                    "value": "0",
+                    "isPath": false
+                },
+                {
+                    "name": "ret_txt",
+                    "value": "\"OK\"",
+                    "isPath": false
+                },
+                {
+                    "name": "origen_path",
+                    "value": "productos.xlsx",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "c3e5e7f6-9175-4daf-98f2-d6c0e2dca78f",
+            "colId": "1e7c61d6-ebf4-4e56-be37-d93e3563d8f5",
+            "containerId": "",
+            "name": "mll_fichas_tecnicas",
+            "url": "http://127.0.0.1:8000/mallorquina/mll_fichas_tecnicas?id_App=1&user=usuario_dev&ret_code=0&ret_txt=\"OK\"&output_path=fichas_tecnicas.html",
+            "method": "GET",
+            "sortNum": 78.2,
+            "created": "2025-01-02T12:28:35.082Z",
+            "modified": "2025-01-28T21:52:37.934Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGVzYXJyb2xsbyIsImlkX0FwcCI6MSwiZXhwIjoxNzM3MDI3NTUxfQ.uQvN9U8RqD5aD25FGNn5daZPCMqHsYPX4XbY0bpOkd4"
+                }
+            ],
+            "params": [
+                {
+                    "name": "id_App",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "user",
+                    "value": "usuario_dev",
+                    "isPath": false
+                },
+                {
+                    "name": "ret_code",
+                    "value": "0",
+                    "isPath": false
+                },
+                {
+                    "name": "ret_txt",
+                    "value": "\"OK\"",
+                    "isPath": false
+                },
+                {
+                    "name": "output_path",
+                    "value": "fichas_tecnicas.html",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "db299fb4-a469-4b89-9e79-5cede3f75c55",
+            "colId": "1e7c61d6-ebf4-4e56-be37-d93e3563d8f5",
+            "containerId": "",
+            "name": "mll_inf_arqueo_caja",
+            "url": "http://localhost:8000/mallorquina/mll_inf_arqueo_caja?id_App=63&user=Pruebas&ret_code=0&ret_txt=\"\"&fecha=2024-12-01&tienda=0",
+            "method": "GET",
+            "sortNum": 156.3,
+            "created": "2024-12-30T12:34:53.225Z",
+            "modified": "2025-01-28T21:42:04.790Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGVzYXJyb2xsbyIsImlkX0FwcCI6MSwiZXhwIjoxNzM3MDI3NTUxfQ.uQvN9U8RqD5aD25FGNn5daZPCMqHsYPX4XbY0bpOkd4"
+                }
+            ],
+            "params": [
+                {
+                    "name": "id_App",
+                    "value": "63",
+                    "isPath": false
+                },
+                {
+                    "name": "user",
+                    "value": "Pruebas",
+                    "isPath": false
+                },
+                {
+                    "name": "ret_code",
+                    "value": "0",
+                    "isPath": false
+                },
+                {
+                    "name": "ret_txt",
+                    "value": "\"\"",
+                    "isPath": false
+                },
+                {
+                    "name": "fecha",
+                    "value": "2024-12-01",
+                    "isPath": false
+                },
+                {
+                    "name": "tienda",
+                    "value": "0",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "038f2b4b-34be-478d-a2ce-2e15ebc3b4f8",
+            "colId": "1e7c61d6-ebf4-4e56-be37-d93e3563d8f5",
+            "containerId": "",
+            "name": "arqueo_caja",
+            "url": "http://localhost:8000/mallorquina/mll_arqueo_caja?id_App=1&user=usuario_dev&ret_code=0&ret_txt=\"\"",
+            "method": "GET",
+            "sortNum": 312.5,
+            "created": "2024-12-30T12:28:44.065Z",
+            "modified": "2025-01-28T19:23:53.833Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGVzYXJyb2xsbyIsImlkX0FwcCI6MSwiZXhwIjoxNzM3MDI3NTUxfQ.uQvN9U8RqD5aD25FGNn5daZPCMqHsYPX4XbY0bpOkd4"
+                }
+            ],
+            "params": [
+                {
+                    "name": "id_App",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "user",
+                    "value": "usuario_dev",
+                    "isPath": false
+                },
+                {
+                    "name": "ret_code",
+                    "value": "0",
+                    "isPath": false
+                },
+                {
+                    "name": "ret_txt",
+                    "value": "\"\"",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "b719d5da-2723-4c0e-95c0-ff8d47e59747",
+            "colId": "1e7c61d6-ebf4-4e56-be37-d93e3563d8f5",
+            "containerId": "",
+            "name": "mll_convierte_tarifas",
+            "url": "http://localhost:8000/mallorquina/mll_convierte_tarifas?id_App=63&user=usuario_dev&ret_code=0&ret_txt=\"\"",
+            "method": "GET",
+            "sortNum": 625,
+            "created": "2024-12-30T12:36:59.985Z",
+            "modified": "2025-01-26T21:24:53.402Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGVzYXJyb2xsbyIsImlkX0FwcCI6MSwiZXhwIjoxNzM3MDI3NTUxfQ.uQvN9U8RqD5aD25FGNn5daZPCMqHsYPX4XbY0bpOkd4"
+                }
+            ],
+            "params": [
+                {
+                    "name": "id_App",
+                    "value": "63",
+                    "isPath": false
+                },
+                {
+                    "name": "user",
+                    "value": "usuario_dev",
+                    "isPath": false
+                },
+                {
+                    "name": "ret_code",
+                    "value": "0",
+                    "isPath": false
+                },
+                {
+                    "name": "ret_txt",
+                    "value": "\"\"",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "21192aa5-5d0f-4eb4-9306-dcc034338311",
+            "colId": "1e7c61d6-ebf4-4e56-be37-d93e3563d8f5",
+            "containerId": "",
+            "name": "mll_sync_todo",
+            "url": "http://localhost:8000/mallorquina/mll_sincroniza?id_App=1&user=Pruebas&ret_code=0&ret_txt=\"\"",
+            "method": "GET",
+            "sortNum": 1250,
+            "created": "2024-12-30T12:32:00.601Z",
+            "modified": "2025-01-20T06:56:45.243Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiUHJ1ZWJhcyIsImlkX0FwcCI6MSwiZXhwIjoxNzM3MDIxNjM5fQ.HrrzPqj7-p48yActAWxIe6fFMWlqHoNmgUTXE8FtDzQ"
+                }
+            ],
+            "params": [
+                {
+                    "name": "id_App",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "user",
+                    "value": "Pruebas",
+                    "isPath": false
+                },
+                {
+                    "name": "ret_code",
+                    "value": "0",
+                    "isPath": false
+                },
+                {
+                    "name": "ret_txt",
+                    "value": "\"\"",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "0ea276e7-fba6-40d9-ae44-8afcda9bc5b6",
+            "colId": "1e7c61d6-ebf4-4e56-be37-d93e3563d8f5",
+            "containerId": "",
+            "name": "mll_consultas",
+            "url": "http://localhost:8000/mallorquina/mll_consultas?id_App=1&user=usuario_dev&ret_code=0&ret_txt=\"\"&fecha=2024-10-05",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-12-30T12:33:46.818Z",
+            "modified": "2025-01-16T11:05:52.840Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGVzYXJyb2xsbyIsImlkX0FwcCI6MSwiZXhwIjoxNzM3MDI3NTUxfQ.uQvN9U8RqD5aD25FGNn5daZPCMqHsYPX4XbY0bpOkd4"
+                }
+            ],
+            "params": [
+                {
+                    "name": "id_App",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "user",
+                    "value": "usuario_dev",
+                    "isPath": false
+                },
+                {
+                    "name": "ret_code",
+                    "value": "0",
+                    "isPath": false
+                },
+                {
+                    "name": "ret_txt",
+                    "value": "\"\"",
+                    "isPath": false
+                },
+                {
+                    "name": "fecha",
+                    "value": "2024-10-05",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "46797a3e-1a53-4fc4-9689-28e3bed3566a",
+            "colId": "1e7c61d6-ebf4-4e56-be37-d93e3563d8f5",
+            "containerId": "",
+            "name": "mll_encargos_navidad",
+            "url": "http://localhost:8000/mll_encargos_navidad?id_App=63&user=Pruebas&ret_code=0&ret_txt=\"\"",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2025-01-09T13:25:57.515Z",
+            "modified": "2025-01-09T13:25:57.515Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id_App",
+                    "value": "63",
+                    "isPath": false
+                },
+                {
+                    "name": "user",
+                    "value": "Pruebas",
+                    "isPath": false
+                },
+                {
+                    "name": "ret_code",
+                    "value": "0",
+                    "isPath": false
+                },
+                {
+                    "name": "ret_txt",
+                    "value": "\"\"",
+                    "isPath": false
+                }
+            ]
+        }
+    ],
+    "ref": "YZOjrXjdybClV9r5hhOevvTtLs3SRabkGetk28718Wexf67HJu_Z1i8crL4o7d6BGT_k2t_PBwvJ7MNeNvIbkw"
+}
