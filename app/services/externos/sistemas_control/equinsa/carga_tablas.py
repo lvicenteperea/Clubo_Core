@@ -1,9 +1,9 @@
 from datetime import datetime
 
-from app.external_services.equinsa.servicios_equinsa import EquinsaService
+from app.services.externos.sistemas_control.equinsa.servicios_equinsa import EquinsaService
 
 from app.utils.utilidades import graba_log, imprime
-from app.config.db_mallorquina import get_db_connection_mysql, close_connection_mysql
+from app.config.db_clubo import get_db_connection_mysql, close_connection_mysql
 from app.utils.InfoTransaccion import InfoTransaccion
 from app.config.settings import settings
 
@@ -24,6 +24,8 @@ def proceso(param: InfoTransaccion) -> list:
         cursor_mysql = conn_mysql.cursor(dictionary=True)
 
         tablas = recupera_tablas(param, equinsa)
+               # ['_hissesbd', '_ver', 'c_tipapa', 'c_ins', 'apa', 'c_tipsop', 'apeman', 'c_condetcob', 'c_contot', 'c_estpre', 'c_forpag', 'c_gruparcon', 'c_gruper', 'c_parcon', 'c_per', 'c_resautpro', 'c_subtipapa', 'c_tipinc', 'c_tipmanpro', 'c_tipopeaud', 'c_tipopecaj', 'c_tippro', 'camapa', 'capima', 'car', 'cli', 'grucli', 'cligrucli', 'ope', 'tur', 'cob', 'comeve', 'con', 'decperope', 'lispre', 'tar', 'rec', 'hor', 'profuecir', 'proencir', 'grupro', 'detcob', 'opecaj', 'detopecaj', 'plazon', 'zon', 'entsal', 'enu', 'envinc', 'equgruproins', 'res', 'fac', 'fes', 'frahor', 'fratar', 'inc', 'inssis', 'lisnegmat', 'lisnegpro', 'manpro', 'remtarcre', 'opetarcre', 'parcon', 'paslispre', 'perope', 'polacc', 'regaud', 'regcon', 'regpreusu', 'remrecdom', 'traren', 'renpro', 'tarpro', 'tottur', 'traerrsis', 'vehcli', 'veropepro']
+        tablas = ['c_tipapa', 'c_ins', 'apa', 'c_tipsop', 'apeman', 'c_condetcob', 'c_contot', 'c_estpre', 'c_forpag', 'c_gruparcon', 'c_gruper', 'c_parcon', 'c_per', 'c_resautpro', 'c_subtipapa', 'c_tipinc', 'c_tipmanpro', 'c_tipopeaud', 'c_tipopecaj', 'c_tippro', 'camapa', 'capima', 'car', 'cli', 'grucli', 'cligrucli', 'ope', 'tur', 'cob', 'comeve', 'con', 'decperope', 'lispre', 'tar', 'rec', 'hor', 'profuecir', 'proencir', 'grupro', 'detcob', 'opecaj', 'detopecaj', 'plazon', 'zon', 'entsal', 'enu', 'envinc', 'equgruproins', 'res', 'fac', 'fes', 'frahor', 'fratar', 'inc', 'inssis', 'lisnegmat', 'lisnegpro', 'manpro', 'remtarcre', 'opetarcre', 'parcon', 'paslispre', 'perope', 'polacc', 'regaud', 'regcon', 'regpreusu', 'remrecdom', 'traren', 'renpro', 'tarpro', 'tottur', 'traerrsis', 'vehcli', 'veropepro']
 
         for tabla in tablas:
             columnas = recupera_columnas(param, equinsa, tabla)
@@ -103,9 +105,9 @@ def insert_datos(param: InfoTransaccion, cursor_mysql, tabla, insert_query, dato
     # columnas = ['fechorfin', 'fechorini', 'nompc', 'nomapl', 'pidapl', 'ruteje', 'finfor', 'nomusu', 'verapl']
     columnas = list(datos_dict_ok[0].keys())
     datos = [tuple(row.get(col, None) for col in columnas) for row in datos_dict_ok]
-     
 
-    imprime([datos, len(datos), type(datos), insert_query], '*   INSERT', 2)
+    imprime([insert_query, datos], "=", 2)
+    z=1/0
 
     cursor_mysql.executemany(insert_query, datos)
 

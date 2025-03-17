@@ -6,7 +6,7 @@ from datetime import datetime, timedelta, timezone
 
 from passlib.context import CryptContext
 
-from app.config.db_mallorquina import get_db_connection_mysql, close_connection_mysql
+from app.config.db_clubo import get_db_connection_mysql, close_connection_mysql
 from app.utils.utilidades import graba_log, imprime
 from app.utils.mis_excepciones import MiException
 from app.utils.InfoTransaccion import InfoTransaccion

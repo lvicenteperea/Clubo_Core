@@ -3,7 +3,7 @@ import json
 
 from app.utils.InfoTransaccion import InfoTransaccion
 from app.utils.utilidades import graba_log, imprime
-from app.config.db_mallorquina import get_db_connection_mysql, close_connection_mysql
+from app.config.db_clubo import get_db_connection_mysql, close_connection_mysql
 
 #----------------------------------------------------------------------------------------
 #----------------------------------------------------------------------------------------

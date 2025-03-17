@@ -1,0 +1,152 @@
+2025-03-17 11:31:23,182 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-17 11:31:23,182 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-17 11:31:23,182 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-17 11:31:23,240 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-17 11:33:09,360 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-17 11:33:09,360 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-17 11:33:09,360 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-17 11:33:09,365 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-17 11:38:09,412 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-17 11:38:09,412 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-17 11:38:09,412 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-17 11:38:09,427 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-17 11:38:39,611 - APP - mysql.connector - DEBUG - Building SSL context
+2025-03-17 11:38:39,637 - APP - mysql.connector - DEBUG - Switching to SSL
+2025-03-17 11:38:39,645 - APP - mysql.connector - DEBUG - SSL has been enabled
+2025-03-17 11:38:39,645 - APP - mysql.connector - DEBUG - Starting authorization phase
+2025-03-17 11:38:39,645 - APP - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-03-17 11:38:39,645 - APP - mysql.connector - INFO - package: mysql.connector.plugins
+2025-03-17 11:38:39,645 - APP - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-03-17 11:38:39,645 - APP - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-03-17 11:38:39,653 - APP - mysql.connector - DEBUG - Exchanging further packets
+2025-03-17 11:38:39,653 - APP - mysql.connector - DEBUG - caching_sha2_password completed succesfully
+2025-03-17 11:38:44,524 - APP - app_logger - ERROR - MI ERROR: error_sistema: raise get_exception(packet) - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\mysql\connector\connection.py - 635 - _handle_result: App: 1, Usuario: usuario_dev, Error: 0 - OK., debug: insertando en tabla: _ver + proceso.Exception, parametros: [<app.services.externos.sistemas_control.equinsa.servicios_equinsa.EquinsaService object at 0x00000256D3021E80>] - ERROR: 1062 - 1062 (23000): Duplicate entry '1.16' for key '_ver.PRIMARY' - LOCALIZACION: raise get_exception(packet) - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\mysql\connector\connection.py - 635 - _handle_result)
+2025-03-17 11:38:44,571 - APP - app_logger - ERROR - MI ERROR: generic_exception_handler: raise get_exception(packet) - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\mysql\connector\connection.py - 635 - _handle_result: App: 1, Usuario: Vamos a ver1, Error: -1 - 1062 (23000): Duplicate entry '1.16' for key '_ver.PRIMARY', debug: , parametros: [] - ERROR: 1062 - 1062 (23000): Duplicate entry '1.16' for key '_ver.PRIMARY' - LOCALIZACION: raise get_exception(packet) - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\mysql\connector\connection.py - 635 - _handle_result)
+2025-03-17 11:42:14,103 - APP - mysql.connector - DEBUG - Building SSL context
+2025-03-17 11:42:14,124 - APP - mysql.connector - DEBUG - Switching to SSL
+2025-03-17 11:42:14,134 - APP - mysql.connector - DEBUG - SSL has been enabled
+2025-03-17 11:42:14,134 - APP - mysql.connector - DEBUG - Starting authorization phase
+2025-03-17 11:42:14,134 - APP - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-03-17 11:42:14,134 - APP - mysql.connector - DEBUG - Exchanging further packets
+2025-03-17 11:42:14,134 - APP - mysql.connector - DEBUG - caching_sha2_password completed succesfully
+2025-03-17 11:42:18,761 - APP - app_logger - ERROR - MI ERROR: error_sistema: raise get_exception(packet) - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\mysql\connector\connection.py - 635 - _handle_result: App: 1, Usuario: usuario_dev, Error: 0 - OK., debug: insertando en tabla: c_tipapa + proceso.Exception, parametros: [<app.services.externos.sistemas_control.equinsa.servicios_equinsa.EquinsaService object at 0x00000256D39E1F70>] - ERROR: 1062 - 1062 (23000): Duplicate entry '1' for key 'c_tipapa.PRIMARY' - LOCALIZACION: raise get_exception(packet) - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\mysql\connector\connection.py - 635 - _handle_result)
+2025-03-17 11:42:18,766 - APP - app_logger - ERROR - MI ERROR: generic_exception_handler: raise get_exception(packet) - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\mysql\connector\connection.py - 635 - _handle_result: App: 1, Usuario: Vamos a ver1, Error: -1 - 1062 (23000): Duplicate entry '1' for key 'c_tipapa.PRIMARY', debug: , parametros: [] - ERROR: 1062 - 1062 (23000): Duplicate entry '1' for key 'c_tipapa.PRIMARY' - LOCALIZACION: raise get_exception(packet) - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\mysql\connector\connection.py - 635 - _handle_result)
+2025-03-17 11:42:19,941 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-17 11:42:19,941 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-17 11:42:19,941 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-17 11:42:19,952 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-17 11:44:16,270 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-17 11:44:16,270 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-17 11:44:16,270 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-17 11:44:16,274 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-17 11:45:50,686 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-17 11:45:50,686 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-17 11:45:50,686 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-17 11:45:50,686 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-17 11:45:53,503 - APP - mysql.connector - DEBUG - Building SSL context
+2025-03-17 11:45:53,554 - APP - mysql.connector - DEBUG - Switching to SSL
+2025-03-17 11:45:53,554 - APP - mysql.connector - DEBUG - SSL has been enabled
+2025-03-17 11:45:53,554 - APP - mysql.connector - DEBUG - Starting authorization phase
+2025-03-17 11:45:53,554 - APP - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-03-17 11:45:53,554 - APP - mysql.connector - INFO - package: mysql.connector.plugins
+2025-03-17 11:45:53,554 - APP - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-03-17 11:45:53,554 - APP - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-03-17 11:45:53,554 - APP - mysql.connector - DEBUG - Exchanging further packets
+2025-03-17 11:45:53,554 - APP - mysql.connector - DEBUG - caching_sha2_password completed succesfully
+2025-03-17 11:45:58,061 - APP - app_logger - ERROR - MI ERROR: error_sistema: datos = datos_equinsa["rows"] - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\equinsa\carga_tablas.py - 80 - obtener_datos_origen: App: 1, Usuario: usuario_dev, Error: 0 - OK., debug: insertando en tabla: c_tipapa + proceso.Exception, parametros: [<app.services.externos.sistemas_control.equinsa.servicios_equinsa.EquinsaService object at 0x0000014F195E8F20>] - ERROR: 'NoneType' object is not subscriptable - 'NoneType' object is not subscriptable - LOCALIZACION: datos = datos_equinsa["rows"] - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\equinsa\carga_tablas.py - 80 - obtener_datos_origen)
+2025-03-17 11:49:42,609 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-17 11:49:42,609 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-17 11:49:42,609 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-17 11:49:42,609 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-17 11:49:44,212 - APP - mysql.connector - DEBUG - Building SSL context
+2025-03-17 11:49:44,241 - APP - mysql.connector - DEBUG - Switching to SSL
+2025-03-17 11:49:44,243 - APP - mysql.connector - DEBUG - SSL has been enabled
+2025-03-17 11:49:44,243 - APP - mysql.connector - DEBUG - Starting authorization phase
+2025-03-17 11:49:44,243 - APP - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-03-17 11:49:44,243 - APP - mysql.connector - INFO - package: mysql.connector.plugins
+2025-03-17 11:49:44,243 - APP - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-03-17 11:49:44,243 - APP - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-03-17 11:49:44,243 - APP - mysql.connector - DEBUG - Exchanging further packets
+2025-03-17 11:49:44,243 - APP - mysql.connector - DEBUG - caching_sha2_password completed succesfully
+2025-03-17 11:49:44,500 - APP - app_logger - ERROR - MI ERROR: error_sistema: z=1/0 - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\equinsa\carga_tablas.py - 28 - proceso: App: 1, Usuario: usuario_dev, Error: 0 - OK., debug: proceso + proceso.Exception, parametros: [<app.services.externos.sistemas_control.equinsa.servicios_equinsa.EquinsaService object at 0x000002430C919610>] - ERROR: division by zero - division by zero - LOCALIZACION: z=1/0 - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\equinsa\carga_tablas.py - 28 - proceso)
+2025-03-17 11:49:44,513 - APP - app_logger - ERROR - MI ERROR: generic_exception_handler: z=1/0 - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\equinsa\carga_tablas.py - 28 - proceso: App: 1, Usuario: Vamos a ver1, Error: -1 - division by zero, debug: , parametros: [] - ERROR: division by zero - division by zero - LOCALIZACION: z=1/0 - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\equinsa\carga_tablas.py - 28 - proceso)
+2025-03-17 11:49:59,271 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-17 11:49:59,271 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-17 11:49:59,271 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-17 11:49:59,277 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-17 11:50:00,801 - APP - mysql.connector - DEBUG - Building SSL context
+2025-03-17 11:50:00,829 - APP - mysql.connector - DEBUG - Switching to SSL
+2025-03-17 11:50:00,833 - APP - mysql.connector - DEBUG - SSL has been enabled
+2025-03-17 11:50:00,833 - APP - mysql.connector - DEBUG - Starting authorization phase
+2025-03-17 11:50:00,833 - APP - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-03-17 11:50:00,833 - APP - mysql.connector - INFO - package: mysql.connector.plugins
+2025-03-17 11:50:00,833 - APP - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-03-17 11:50:00,833 - APP - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-03-17 11:50:00,834 - APP - mysql.connector - DEBUG - Exchanging further packets
+2025-03-17 11:50:00,834 - APP - mysql.connector - DEBUG - caching_sha2_password completed succesfully
+2025-03-17 11:50:01,051 - APP - app_logger - ERROR - MI ERROR: error_sistema: z=1/0 - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\equinsa\carga_tablas.py - 28 - proceso: App: 1, Usuario: usuario_dev, Error: 0 - OK., debug: proceso + proceso.Exception, parametros: [<app.services.externos.sistemas_control.equinsa.servicios_equinsa.EquinsaService object at 0x000002631A07CD40>] - ERROR: division by zero - division by zero - LOCALIZACION: z=1/0 - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\equinsa\carga_tablas.py - 28 - proceso)
+2025-03-17 11:50:01,056 - APP - app_logger - ERROR - MI ERROR: generic_exception_handler: z=1/0 - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\equinsa\carga_tablas.py - 28 - proceso: App: 1, Usuario: Vamos a ver1, Error: -1 - division by zero, debug: , parametros: [] - ERROR: division by zero - division by zero - LOCALIZACION: z=1/0 - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\equinsa\carga_tablas.py - 28 - proceso)
+2025-03-17 11:50:41,829 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-17 11:50:41,829 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-17 11:50:41,829 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-17 11:50:41,837 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-17 11:50:47,526 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-17 11:50:47,526 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-17 11:50:47,526 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-17 11:50:47,531 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-17 11:51:21,064 - APP - mysql.connector - DEBUG - Building SSL context
+2025-03-17 11:51:21,106 - APP - mysql.connector - DEBUG - Switching to SSL
+2025-03-17 11:51:21,106 - APP - mysql.connector - DEBUG - SSL has been enabled
+2025-03-17 11:51:21,106 - APP - mysql.connector - DEBUG - Starting authorization phase
+2025-03-17 11:51:21,106 - APP - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-03-17 11:51:21,106 - APP - mysql.connector - INFO - package: mysql.connector.plugins
+2025-03-17 11:51:21,106 - APP - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-03-17 11:51:21,106 - APP - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-03-17 11:51:21,106 - APP - mysql.connector - DEBUG - Exchanging further packets
+2025-03-17 11:51:21,106 - APP - mysql.connector - DEBUG - caching_sha2_password completed succesfully
+2025-03-17 11:51:21,765 - APP - app_logger - ERROR - MI ERROR: error_sistema: raise get_exception(packet) - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\mysql\connector\connection.py - 635 - _handle_result: App: 1, Usuario: usuario_dev, Error: 0 - OK., debug: insertando en tabla: c_tipapa + proceso.Exception, parametros: [<app.services.externos.sistemas_control.equinsa.servicios_equinsa.EquinsaService object at 0x0000023E778F29C0>] - ERROR: 1062 - 1062 (23000): Duplicate entry '1' for key 'c_tipapa.PRIMARY' - LOCALIZACION: raise get_exception(packet) - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\mysql\connector\connection.py - 635 - _handle_result)
+2025-03-17 11:51:21,765 - APP - app_logger - ERROR - MI ERROR: generic_exception_handler: raise get_exception(packet) - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\mysql\connector\connection.py - 635 - _handle_result: App: 1, Usuario: Vamos a ver1, Error: -1 - 1062 (23000): Duplicate entry '1' for key 'c_tipapa.PRIMARY', debug: , parametros: [] - ERROR: 1062 - 1062 (23000): Duplicate entry '1' for key 'c_tipapa.PRIMARY' - LOCALIZACION: raise get_exception(packet) - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\mysql\connector\connection.py - 635 - _handle_result)
+2025-03-17 11:51:48,248 - APP - mysql.connector - DEBUG - Building SSL context
+2025-03-17 11:51:48,272 - APP - mysql.connector - DEBUG - Switching to SSL
+2025-03-17 11:51:48,272 - APP - mysql.connector - DEBUG - SSL has been enabled
+2025-03-17 11:51:48,272 - APP - mysql.connector - DEBUG - Starting authorization phase
+2025-03-17 11:51:48,272 - APP - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-03-17 11:51:48,272 - APP - mysql.connector - DEBUG - Exchanging further packets
+2025-03-17 11:51:48,279 - APP - mysql.connector - DEBUG - caching_sha2_password completed succesfully
+2025-03-17 11:51:49,524 - APP - app_logger - ERROR - MI ERROR: error_sistema: resultado = datos_equinsa["rows"] - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\equinsa\carga_tablas.py - 70 - recupera_columnas: App: 1, Usuario: usuario_dev, Error: 0 - OK., debug: insertando en tabla: c_ins + proceso.Exception, parametros: [<app.services.externos.sistemas_control.equinsa.servicios_equinsa.EquinsaService object at 0x0000023E7A01BA10>] - ERROR: 'NoneType' object is not subscriptable - 'NoneType' object is not subscriptable - LOCALIZACION: resultado = datos_equinsa["rows"] - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\equinsa\carga_tablas.py - 70 - recupera_columnas)
+2025-03-17 11:54:21,263 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-17 11:54:21,263 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-17 11:54:21,263 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-17 11:54:21,267 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-17 11:54:24,477 - APP - mysql.connector - DEBUG - Building SSL context
+2025-03-17 11:54:24,502 - APP - mysql.connector - DEBUG - Switching to SSL
+2025-03-17 11:54:24,502 - APP - mysql.connector - DEBUG - SSL has been enabled
+2025-03-17 11:54:24,502 - APP - mysql.connector - DEBUG - Starting authorization phase
+2025-03-17 11:54:24,502 - APP - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-03-17 11:54:24,502 - APP - mysql.connector - INFO - package: mysql.connector.plugins
+2025-03-17 11:54:24,502 - APP - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-03-17 11:54:24,502 - APP - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-03-17 11:54:24,502 - APP - mysql.connector - DEBUG - Exchanging further packets
+2025-03-17 11:54:24,510 - APP - mysql.connector - DEBUG - caching_sha2_password completed succesfully
+2025-03-17 11:54:25,215 - APP - app_logger - ERROR - MI ERROR: error_sistema: z=1/0 - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\equinsa\carga_tablas.py - 84 - obtener_datos_origen: App: 1, Usuario: usuario_dev, Error: 0 - OK., debug: proceso + proceso.Exception, parametros: [<app.services.externos.sistemas_control.equinsa.servicios_equinsa.EquinsaService object at 0x00000255C95A66F0>] - ERROR: division by zero - division by zero - LOCALIZACION: z=1/0 - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\equinsa\carga_tablas.py - 84 - obtener_datos_origen)
+2025-03-17 11:54:25,231 - APP - app_logger - ERROR - MI ERROR: generic_exception_handler: z=1/0 - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\equinsa\carga_tablas.py - 84 - obtener_datos_origen: App: 1, Usuario: Vamos a ver1, Error: -1 - division by zero, debug: , parametros: [] - ERROR: division by zero - division by zero - LOCALIZACION: z=1/0 - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\equinsa\carga_tablas.py - 84 - obtener_datos_origen)
+2025-03-17 11:55:35,994 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-17 11:55:35,994 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-17 11:55:35,994 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-17 11:55:35,998 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-17 11:55:39,803 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-17 11:55:39,803 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-17 11:55:39,804 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-17 11:55:39,809 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-17 11:55:42,484 - APP - mysql.connector - DEBUG - Building SSL context
+2025-03-17 11:55:42,509 - APP - mysql.connector - DEBUG - Switching to SSL
+2025-03-17 11:55:42,509 - APP - mysql.connector - DEBUG - SSL has been enabled
+2025-03-17 11:55:42,509 - APP - mysql.connector - DEBUG - Starting authorization phase
+2025-03-17 11:55:42,509 - APP - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-03-17 11:55:42,509 - APP - mysql.connector - INFO - package: mysql.connector.plugins
+2025-03-17 11:55:42,509 - APP - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-03-17 11:55:42,509 - APP - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-03-17 11:55:42,517 - APP - mysql.connector - DEBUG - Exchanging further packets
+2025-03-17 11:55:42,517 - APP - mysql.connector - DEBUG - caching_sha2_password completed succesfully
+2025-03-17 11:55:43,235 - APP - app_logger - ERROR - MI ERROR: error_sistema: z=1/0 - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\equinsa\carga_tablas.py - 110 - insert_datos: App: 1, Usuario: usuario_dev, Error: 0 - OK., debug: insertando en tabla: c_tipapa + proceso.Exception, parametros: [<app.services.externos.sistemas_control.equinsa.servicios_equinsa.EquinsaService object at 0x000001F316DE1940>] - ERROR: division by zero - division by zero - LOCALIZACION: z=1/0 - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\equinsa\carga_tablas.py - 110 - insert_datos)
+2025-03-17 11:55:43,248 - APP - app_logger - ERROR - MI ERROR: generic_exception_handler: z=1/0 - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\equinsa\carga_tablas.py - 110 - insert_datos: App: 1, Usuario: Vamos a ver1, Error: -1 - division by zero, debug: , parametros: [] - ERROR: division by zero - division by zero - LOCALIZACION: z=1/0 - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\equinsa\carga_tablas.py - 110 - insert_datos)

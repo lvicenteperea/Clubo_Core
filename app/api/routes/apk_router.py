@@ -1,10 +1,8 @@
 from fastapi import APIRouter, HTTPException, Body, Request, Depends, File, UploadFile, Form
 from datetime import datetime
 
-from app.external_services.equinsa.servicios_equinsa import EquinsaService
-from app.external_services.equinsa import crea_tablas, carga_tablas
-
-from app.external_services.equinsa.servicios_equinsa import EquinsaService
+from app.services.externos.sistemas_control.equinsa.servicios_equinsa import EquinsaService
+from app.services.externos.sistemas_control.equinsa import crea_tablas, carga_tablas
 
 # Importaciones propias del proyecto
 # from app.external_services.equinsa import (
@@ -65,51 +63,14 @@ async def procesar_request(
         imprime([tiempo, datetime.now().strftime('%Y-%m-%d %H:%M:%S')], "* FIN TIEMPOS *")
 
 
+
+
+
+
+
 # -----------------------------------------------
-# Endpoints optimizados
+# Endpoints individuales
 # -----------------------------------------------
-#------------------------------------------------------------------------------------------------------
-#------------------------------------------------------------------------------------------------------
-@router.post("/apk_crea_tablas", response_model=InfoTransaccion,
-             summary="🔄 ......................................",
-             description="""..........................................................\n
-                                - ✅ **Requiere autenticación**
-                                - ✅ **Recibe un `id_App` y un `user`** para identificar al peticionario
-                                - ✅ **Retorna `status` y `message` indicando error**
-                         """,
-             response_description="""📌 En caso de éxito retorna una clase InfoTransaccion y en resultados una lista json con cada BBDD/entidad/tabla tratada, tipo:\n
-                                    {
-                                        
-                                    }
-                                  """
-            )
-async def apk_crea_tablas(request: Request, body_params: ParamRequest = Body(...)):
-   
-    return await procesar_request(request, body_params, crea_tablas, "apk_crea_tablas")
-
-
-
-#------------------------------------------------------------------------------------------------------
-#------------------------------------------------------------------------------------------------------
-@router.post("/apk_carga_tablas", response_model=InfoTransaccion,
-             summary="🔄 ......................................",
-             description="""..........................................................\n
-                                - ✅ **Requiere autenticación**
-                                - ✅ **Recibe un `id_App` y un `user`** para identificar al peticionario
-                                - ✅ **Retorna `status` y `message` indicando error**
-                         """,
-             response_description="""📌 En caso de éxito retorna una clase InfoTransaccion y en resultados una lista json con cada BBDD/entidad/tabla tratada, tipo:\n
-                                    {
-                                        
-                                    }
-                                  """
-            )
-async def apk_carga_tablas(request: Request, body_params: ParamRequest = Body(...)):
-   
-    return await procesar_request(request, body_params, carga_tablas, "apk_carga_tablas")
-
-
-
 #------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------
 class ApkConsultasRequest(ParamRequest):
@@ -150,7 +111,7 @@ async def apk_consultas(request: Request,
         # param.parametros.append(resultado["rows"])
 
         # Imprimir la respuesta
-        imprime([type(resultado), resultado], '*   Mi primera select', 2)
+        # imprime([type(resultado), resultado], '*   Mi primera select', 2)
 
         param.debug = f"Retornando un lista: {type(resultado["rows"])}"
         param.resultados = resultado["rows"] or []
@@ -164,4 +125,47 @@ async def apk_consultas(request: Request,
         imprime([tiempo, datetime.now().strftime('%Y-%m-%d %H:%M:%S')], "* FIN TIEMPOS *")
 
 
+
+
+
+# -----------------------------------------------
+# Endpoints genéricos
+# -----------------------------------------------
+#------------------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------------
+@router.post("/apk_crea_tablas", response_model=InfoTransaccion,
+             summary="🔄 ......................................",
+             description="""..........................................................\n
+                                - ✅ **Requiere autenticación**
+                                - ✅ **Recibe un `id_App` y un `user`** para identificar al peticionario
+                                - ✅ **Retorna `status` y `message` indicando error**
+                         """,
+             response_description="""📌 En caso de éxito retorna una clase InfoTransaccion y en resultados una lista json con cada BBDD/entidad/tabla tratada, tipo:\n
+                                    {
+                                        
+                                    }
+                                  """
+            )
+async def apk_crea_tablas(request: Request, body_params: ParamRequest = Body(...)):
+    return await procesar_request(request, body_params, crea_tablas, "apk_crea_tablas")
+
+
+
+#------------------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------------
+@router.post("/apk_carga_tablas", response_model=InfoTransaccion,
+             summary="🔄 ......................................",
+             description="""..........................................................\n
+                                - ✅ **Requiere autenticación**
+                                - ✅ **Recibe un `id_App` y un `user`** para identificar al peticionario
+                                - ✅ **Retorna `status` y `message` indicando error**
+                         """,
+             response_description="""📌 En caso de éxito retorna una clase InfoTransaccion y en resultados una lista json con cada BBDD/entidad/tabla tratada, tipo:\n
+                                    {
+                                        
+                                    }
+                                  """
+            )
+async def apk_carga_tablas(request: Request, body_params: ParamRequest = Body(...)):
+    return await procesar_request(request, body_params, carga_tablas, "apk_carga_tablas")
 

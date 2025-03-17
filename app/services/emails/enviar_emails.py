@@ -6,7 +6,7 @@ from app.utils.utilidades import graba_log
 import sendgrid
 from sendgrid.helpers.mail import Mail, Email, To, Cc, Bcc, Content
 
-from app.config.db_mallorquina import get_db_connection_mysql, close_connection_mysql
+from app.config.db_clubo import get_db_connection_mysql, close_connection_mysql
 from app.services.auxiliares.sendgrid_service import enviar_email
 
 from app.utils.utilidades import graba_log, imprime
