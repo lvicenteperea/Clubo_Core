@@ -2470,3 +2470,17 @@
 2025-03-20 18:13:25,076 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
 2025-03-20 18:13:25,076 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
 2025-03-20 18:13:25,076 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-20 18:13:28,753 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-20 18:13:28,754 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-20 18:13:28,754 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-20 18:13:28,848 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-20 18:13:30,712 - APP - mysql.connector - DEBUG - Building SSL context
+2025-03-20 18:13:30,737 - APP - mysql.connector - DEBUG - Switching to SSL
+2025-03-20 18:13:30,745 - APP - mysql.connector - DEBUG - SSL has been enabled
+2025-03-20 18:13:30,745 - APP - mysql.connector - DEBUG - Starting authorization phase
+2025-03-20 18:13:30,745 - APP - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-03-20 18:13:30,745 - APP - mysql.connector - INFO - package: mysql.connector.plugins
+2025-03-20 18:13:30,745 - APP - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-03-20 18:13:30,745 - APP - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-03-20 18:13:30,745 - APP - mysql.connector - DEBUG - Exchanging further packets
+2025-03-20 18:13:30,745 - APP - mysql.connector - DEBUG - caching_sha2_password completed succesfully
