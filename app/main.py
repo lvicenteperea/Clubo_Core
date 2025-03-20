@@ -11,11 +11,10 @@ from fastapi.middleware.cors import CORSMiddleware
 # from fastapi.responses import JSONResponse
 
 # from app.api.routes import router as api_router
-from app.api.routes.apk_router import router as mallorquina_router
 from app.api.routes.auth_router import router as auth_router
 from app.api.routes.email_router import router as email_router
-
-from app.api.routes.apk_router import router as aparcamientos_router
+from app.api.routes.equinsa_router import router as equinsa_router
+from app.api.routes.skidata_router import router as skidata_router
 
 
 
@@ -48,11 +47,10 @@ app.middleware("http")(log_tiempos_respuesta)
 # RUTAS
 # -----------------------------------------------------------------------------------------------
 # app.include_router(api_router)
-app.include_router(mallorquina_router, prefix="/mallorquina", tags=["Mallorquina"])
 app.include_router(auth_router, prefix="/auth", tags=["Authentication"])
 app.include_router(email_router, prefix="/email", tags=["Email"])
-
-app.include_router(aparcamientos_router, prefix="/aparcamientos", tags=["Clubo"])
+app.include_router(equinsa_router, prefix="/apk-equinsa", tags=["Equinsa"])
+app.include_router(skidata_router, prefix="/apk-skidata", tags=["Skidata"])
 
 # -----------------------------------------------------------------------------------------------
 # AUTENTICACIÓN

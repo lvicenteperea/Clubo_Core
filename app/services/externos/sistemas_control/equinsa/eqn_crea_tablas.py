@@ -1,9 +1,6 @@
-import pyodbc
-import os
-import shutil
-from datetime import datetime
+import re
 
-from app.services.externos.sistemas_control.equinsa.servicios_equinsa import EquinsaService
+from app.config.servicios_equinsa import EquinsaService
 
 from app.utils.utilidades import graba_log, imprime
 from app.config.db_clubo import get_db_connection_mysql, close_connection_mysql
@@ -94,13 +91,22 @@ def proceso(param: InfoTransaccion) -> list:
         primary_keys = [col[0] for col in columns if col[1] is not None]
         column_definitions = ",\n    ".join([col[0] for col in columns])
 
-        primary_key_def = f",\n    PRIMARY KEY ({', '.join(primary_keys)})" if primary_keys else ""
+        # Cadena original
+        cadena = ', '.join(primary_keys)
+        imprime([cadena], "*  CADENA")
 
-        script = f"CREATE TABLE `{table}` (\n    {column_definitions}{primary_key_def}\n);"
+        # Usar una expresión regular para extraer los nombres de las columnas
+        lista_columnas = re.findall(r'`([^`]+)`', cadena)
+
+        # Unir los nombres de las columnas con comas
+        columnas = ', '.join(f'`{col}`' for col in lista_columnas)
+        primary_key_def = f",\n    PRIMARY KEY ({columnas})" if primary_keys else ""
+
+        script = f"CREATE TABLE `eqn_{table}` (\n    {column_definitions}{primary_key_def}\n);"
         scripts.append(script)
 
     # Guardar los scripts en un archivo
-    with open("create_tables_mysql.sql", "w", encoding="utf-8") as f:
+    with open("tables_mysql_equinsa.sql", "w", encoding="utf-8") as f:
         for script in scripts:
             f.write(script + "\n\n")
 

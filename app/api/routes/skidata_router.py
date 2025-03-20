@@ -1,13 +1,9 @@
 from fastapi import APIRouter, HTTPException, Body, Request, Depends, File, UploadFile, Form
 from datetime import datetime
 
-from app.services.externos.sistemas_control.equinsa.servicios_equinsa import EquinsaService
-from app.services.externos.sistemas_control.equinsa import crea_tablas, carga_tablas
+from app.services.externos.sistemas_control.skidata import skd_carga_tablas, skd_crea_tablas
 
-# Importaciones propias del proyecto
-# from app.external_services.equinsa import (
-#     EquinsaService, crea_tablas
-# )
+from app.config.db_clubo import get_db_connection_sqlserver, close_connection_sqlserver
 
 from app.config.settings import settings
 from app.utils.functions import control_usuario
@@ -91,7 +87,6 @@ async def apk_consultas(request: Request,
 ):
 
     tiempo = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    print("Tiempos!!!-----------------------------------------", tiempo)
     try:
         # --------------------------------------------------------------------------------
         # Validaciones y construcción Básica
@@ -103,18 +98,21 @@ async def apk_consultas(request: Request,
         # --------------------------------------------------------------------------------
         # Servicio
         # --------------------------------------------------------------------------------
-        equinsa = EquinsaService(carpark_id="1237")
+        bbdd_config = {"host": "192.168.17.99", "port": "1433", "user": "onlineuser", "database": "PARK_DB", "password": "Not4LocalUsers!"} # obtener_conexion_bbdd_origen(conn_mysql, ID_NUBE)
+        param.debug = "conectamos con esta bbdd origen"
+        conn_sqlserver = get_db_connection_sqlserver(bbdd_config)
+        cursor_sqlserver = conn_sqlserver.cursor()
 
-        # Ejecutar una consulta SQL
-        sql_query = param.parametros[0] # "SELECT * FROM ope"
-        resultado = equinsa.execute_sql_command(sql_query)
-        # param.parametros.append(resultado["rows"])
+        query = param.parametros[0] # """SELECT table_name FROM INFORMATION_SCHEMA.TABLES where table_catalog = ?"""
+        
+        cursor_sqlserver.execute(query)
+        # resultado = cursor_sqlserver.fetchall()
+        resultado = [list(row) for row in cursor_sqlserver.fetchall()]
+        close_connection_sqlserver(conn_sqlserver,  cursor_sqlserver)
+        
 
-        # Imprimir la respuesta
-        # imprime([type(resultado), resultado], '*   Mi primera select', 2)
-
-        param.debug = f"Retornando un lista: {type(resultado["rows"])}"
-        param.resultados = resultado["rows"] or []
+        param.debug = f"Retornando un lista: {type(resultado)}"
+        param.resultados = resultado or []
         return param
 
     except Exception as e:
@@ -147,7 +145,7 @@ async def apk_consultas(request: Request,
                                   """
             )
 async def apk_crea_tablas(request: Request, body_params: ParamRequest = Body(...)):
-    return await procesar_request(request, body_params, crea_tablas, "apk_crea_tablas")
+    return await procesar_request(request, body_params, skd_crea_tablas, "apk_crea_tablas")
 
 
 
@@ -167,5 +165,6 @@ async def apk_crea_tablas(request: Request, body_params: ParamRequest = Body(...
                                   """
             )
 async def apk_carga_tablas(request: Request, body_params: ParamRequest = Body(...)):
-    return await procesar_request(request, body_params, carga_tablas, "apk_carga_tablas")
+    return await procesar_request(request, body_params, skd_carga_tablas, "apk_carga_tablas")
+
 

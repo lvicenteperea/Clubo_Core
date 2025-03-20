@@ -43,7 +43,7 @@ class Settings(BaseSettings):
     # para el API de Equinsa
     API_EQUINSA_USER: str ="clubo"
     API_EQUINSA_PWR: str = "AG8t3B2q"
-
+    API_EQUINSA_URL: str = "https://tunel.equinsaparking.com/EPCloud/api/parking"
 
 
     class Config:

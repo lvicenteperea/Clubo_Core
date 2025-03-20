@@ -1,0 +1,8 @@
+*.log
+.env
+app/config/settings.py
+app/ficheros/web/alergenos/fichas/*.*
+app/ficheros/datos/alergenos/versiones
+app/ficheros/datos/tarifas_a_TPV/tarifas_20*.*
+.codegpt
+*__pycache__*

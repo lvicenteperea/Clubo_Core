@@ -1,4 +1,3 @@
-import os
 import base64
 import requests
 from app.config.settings import settings
@@ -9,7 +8,7 @@ class EquinsaService:
         self.carpark_id = carpark_id
         self.api_user =  settings.API_EQUINSA_USER    #  os.getenv("API_EQUINSA_USER", "clubo")
         self.api_password = settings.API_EQUINSA_PWR  #  os.getenv("API_EQUINSA_PWR", "AG8t3B2q")
-        self.base_url = "https://tunel.equinsaparking.com/EPCloud/api/parking"
+        self.base_url = settings.API_EQUINSA_URL
 
         # Generar el token de autenticación en base64
         self.auth_header = self._generate_auth_header()
