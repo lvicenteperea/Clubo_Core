@@ -2484,3 +2484,177 @@
 2025-03-20 18:13:30,745 - APP - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
 2025-03-20 18:13:30,745 - APP - mysql.connector - DEBUG - Exchanging further packets
 2025-03-20 18:13:30,745 - APP - mysql.connector - DEBUG - caching_sha2_password completed succesfully
+2025-03-20 18:25:27,760 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-20 18:25:27,760 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-20 18:25:27,760 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-20 18:25:27,854 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-20 18:32:28,314 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-20 18:32:28,314 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-20 18:32:28,314 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-20 18:32:28,430 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-20 18:32:38,461 - APP - mysql.connector - DEBUG - Building SSL context
+2025-03-20 18:32:38,498 - APP - mysql.connector - DEBUG - Switching to SSL
+2025-03-20 18:32:38,506 - APP - mysql.connector - DEBUG - SSL has been enabled
+2025-03-20 18:32:38,506 - APP - mysql.connector - DEBUG - Starting authorization phase
+2025-03-20 18:32:38,506 - APP - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-03-20 18:32:38,506 - APP - mysql.connector - INFO - package: mysql.connector.plugins
+2025-03-20 18:32:38,506 - APP - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-03-20 18:32:38,506 - APP - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-03-20 18:32:38,507 - APP - mysql.connector - DEBUG - Exchanging further packets
+2025-03-20 18:32:38,507 - APP - mysql.connector - DEBUG - caching_sha2_password completed succesfully
+2025-03-20 18:32:53,639 - APP - app_logger - ERROR - MI ERROR: Excepción: {'ret_code': -1, 'ret_txt': "get_db_connection_sqlserver - DRIVER={ODBC Driver 17 for SQL Server};SERVER=192.168.17.99;DATABASE=PARK_DB;UID=onlineuser;PWD='XXXXXXX'"} - ERROR: 08001 - ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Proveedor de TCP: Tiempo de espera de la operación de espera agotado.\r\n (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Ha finalizado el tiempo de espera de inicio de sesión (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Error relacionado con la red o específico de instancia al establecer conexión con el servidor SQL Server. El servidor no se encuentra o no está accesible. Compruebe si el nombre de la instancia es correcto y si SQL Server está configurado para permitir conexiones remotas. Para obtener más información, vea los Libros en pantalla de SQL Server. (258)') - LOCALIZACION: connection =  pyodbc.connect(conexion) - C:\GitHub\Clubo_Core\app\config\db_clubo.py - 100 - get_db_connection_sqlserver)
+2025-03-20 18:32:53,639 - APP - app_logger - ERROR - MI ERROR: error_sistema: cursor_sqlserver = conn_sqlserver.cursor() - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\skidata\skd_carga_tablas.py - 66 - recupera_columnas: App: 1, Usuario: usuario_dev, Error: 0 - OK., debug: recupera_columnas BlockedContractParkingCardsSerialNumbers + proceso.Exception, parametros: [] - ERROR: 'bool' object has no attribute 'cursor' - 'bool' object has no attribute 'cursor' - LOCALIZACION: cursor_sqlserver = conn_sqlserver.cursor() - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\skidata\skd_carga_tablas.py - 66 - recupera_columnas)
+2025-03-20 18:32:53,653 - APP - app_logger - ERROR - MI ERROR: generic_exception_handler: conn.close() - C:\GitHub\Clubo_Core\app\config\db_clubo.py - 114 - close_connection_sqlserver: App: 1, Usuario: Vamos a ver1, Error: -1 - 'bool' object has no attribute 'close', debug: , parametros: [] - ERROR: 'bool' object has no attribute 'close' - 'bool' object has no attribute 'close' - LOCALIZACION: conn.close() - C:\GitHub\Clubo_Core\app\config\db_clubo.py - 114 - close_connection_sqlserver)
+2025-03-20 18:35:05,302 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-20 18:35:05,302 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-20 18:35:05,302 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-20 18:35:05,450 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-20 18:36:03,851 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-20 18:36:03,851 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-20 18:36:03,851 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-20 18:36:06,648 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-20 18:36:06,648 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-20 18:36:06,648 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-20 18:36:06,752 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-20 18:36:11,530 - APP - mysql.connector - DEBUG - Building SSL context
+2025-03-20 18:36:11,578 - APP - mysql.connector - DEBUG - Switching to SSL
+2025-03-20 18:36:11,580 - APP - mysql.connector - DEBUG - SSL has been enabled
+2025-03-20 18:36:11,580 - APP - mysql.connector - DEBUG - Starting authorization phase
+2025-03-20 18:36:11,580 - APP - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-03-20 18:36:11,580 - APP - mysql.connector - INFO - package: mysql.connector.plugins
+2025-03-20 18:36:11,580 - APP - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-03-20 18:36:11,580 - APP - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-03-20 18:36:11,583 - APP - mysql.connector - DEBUG - Exchanging further packets
+2025-03-20 18:36:11,583 - APP - mysql.connector - DEBUG - caching_sha2_password completed succesfully
+2025-03-20 18:36:26,718 - APP - app_logger - ERROR - MI ERROR: Excepción: {'ret_code': -1, 'ret_txt': "get_db_connection_sqlserver - DRIVER={ODBC Driver 17 for SQL Server};SERVER=192.168.17.99;DATABASE=PARK_DB;UID=onlineuser;PWD='XXXXXXX'"} - ERROR: 08001 - ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Proveedor de TCP: Tiempo de espera de la operación de espera agotado.\r\n (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Ha finalizado el tiempo de espera de inicio de sesión (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Error relacionado con la red o específico de instancia al establecer conexión con el servidor SQL Server. El servidor no se encuentra o no está accesible. Compruebe si el nombre de la instancia es correcto y si SQL Server está configurado para permitir conexiones remotas. Para obtener más información, vea los Libros en pantalla de SQL Server. (258)') - LOCALIZACION: connection =  pyodbc.connect(conexion) - C:\GitHub\Clubo_Core\app\config\db_clubo.py - 100 - get_db_connection_sqlserver)
+2025-03-20 18:36:26,718 - APP - app_logger - ERROR - MI ERROR: error_sistema: cursor_sqlserver = conn_sqlserver.cursor() - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\skidata\skd_carga_tablas.py - 66 - recupera_columnas: App: 1, Usuario: usuario_dev, Error: 0 - OK., debug: recupera_columnas BlockedContractParkingCardsSerialNumbers + proceso.Exception, parametros: [] - ERROR: 'bool' object has no attribute 'cursor' - 'bool' object has no attribute 'cursor' - LOCALIZACION: cursor_sqlserver = conn_sqlserver.cursor() - C:\GitHub\Clubo_Core\app\services\externos\sistemas_control\skidata\skd_carga_tablas.py - 66 - recupera_columnas)
+2025-03-20 18:36:26,726 - APP - app_logger - ERROR - MI ERROR: generic_exception_handler: conn.close() - C:\GitHub\Clubo_Core\app\config\db_clubo.py - 114 - close_connection_sqlserver: App: 1, Usuario: Vamos a ver1, Error: -1 - 'bool' object has no attribute 'close', debug: , parametros: [] - ERROR: 'bool' object has no attribute 'close' - 'bool' object has no attribute 'close' - LOCALIZACION: conn.close() - C:\GitHub\Clubo_Core\app\config\db_clubo.py - 114 - close_connection_sqlserver)
+2025-03-20 18:37:00,406 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-20 18:37:00,406 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-20 18:37:00,406 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-20 18:37:00,504 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-20 18:37:04,324 - APP - mysql.connector - DEBUG - Building SSL context
+2025-03-20 18:37:04,360 - APP - mysql.connector - DEBUG - Switching to SSL
+2025-03-20 18:37:04,360 - APP - mysql.connector - DEBUG - SSL has been enabled
+2025-03-20 18:37:04,360 - APP - mysql.connector - DEBUG - Starting authorization phase
+2025-03-20 18:37:04,360 - APP - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-03-20 18:37:04,360 - APP - mysql.connector - INFO - package: mysql.connector.plugins
+2025-03-20 18:37:04,360 - APP - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-03-20 18:37:04,360 - APP - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-03-20 18:37:04,360 - APP - mysql.connector - DEBUG - Exchanging further packets
+2025-03-20 18:37:04,360 - APP - mysql.connector - DEBUG - caching_sha2_password completed succesfully
+2025-03-20 18:38:37,403 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-20 18:38:37,403 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-20 18:38:37,403 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-20 18:38:37,513 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-20 18:38:49,431 - APP - mysql.connector - DEBUG - Building SSL context
+2025-03-20 18:38:49,459 - APP - mysql.connector - DEBUG - Switching to SSL
+2025-03-20 18:38:49,465 - APP - mysql.connector - DEBUG - SSL has been enabled
+2025-03-20 18:38:49,465 - APP - mysql.connector - DEBUG - Starting authorization phase
+2025-03-20 18:38:49,465 - APP - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-03-20 18:38:49,465 - APP - mysql.connector - INFO - package: mysql.connector.plugins
+2025-03-20 18:38:49,465 - APP - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-03-20 18:38:49,465 - APP - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-03-20 18:38:49,465 - APP - mysql.connector - DEBUG - Exchanging further packets
+2025-03-20 18:38:49,465 - APP - mysql.connector - DEBUG - caching_sha2_password completed succesfully
+2025-03-20 18:38:49,473 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 18:38:49,707 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 1271
+2025-03-20 18:38:49,710 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 18:39:01,874 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 500 85
+2025-03-20 18:39:11,877 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 18:39:12,098 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 657
+2025-03-20 18:39:12,098 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 18:39:23,978 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 None
+2025-03-20 18:39:29,928 - APP - app_logger - ERROR - MI ERROR: error_sistema: raise get_exception(packet) - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\mysql\connector\connection.py - 635 - _handle_result: App: 1, Usuario: usuario_dev, Error: 0 - OK., debug: insertando en tabla: detcob + proceso.Exception, parametros: [<app.config.servicios_equinsa.EquinsaService object at 0x000001626BB5A660>] - ERROR: 1146 - 1146 (42S02): Table 'clubo-data.eqn_detcob' doesn't exist - LOCALIZACION: raise get_exception(packet) - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\mysql\connector\connection.py - 635 - _handle_result)
+2025-03-20 18:39:29,935 - APP - app_logger - ERROR - MI ERROR: generic_exception_handler: raise get_exception(packet) - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\mysql\connector\connection.py - 635 - _handle_result: App: 1, Usuario: Vamos a ver1, Error: -1 - 1146 (42S02): Table 'clubo-data.eqn_detcob' doesn't exist, debug: , parametros: [] - ERROR: 1146 - 1146 (42S02): Table 'clubo-data.eqn_detcob' doesn't exist - LOCALIZACION: raise get_exception(packet) - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\mysql\connector\connection.py - 635 - _handle_result)
+2025-03-20 18:40:33,594 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 18:40:34,021 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 None
+2025-03-20 18:41:36,348 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-20 18:41:36,348 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-20 18:41:36,348 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-20 18:41:36,448 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-20 18:41:50,644 - APP - mysql.connector - DEBUG - Building SSL context
+2025-03-20 18:41:50,686 - APP - mysql.connector - DEBUG - Switching to SSL
+2025-03-20 18:41:50,694 - APP - mysql.connector - DEBUG - SSL has been enabled
+2025-03-20 18:41:50,694 - APP - mysql.connector - DEBUG - Starting authorization phase
+2025-03-20 18:41:50,694 - APP - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-03-20 18:41:50,694 - APP - mysql.connector - INFO - package: mysql.connector.plugins
+2025-03-20 18:41:50,694 - APP - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-03-20 18:41:50,694 - APP - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-03-20 18:41:50,694 - APP - mysql.connector - DEBUG - Exchanging further packets
+2025-03-20 18:41:50,694 - APP - mysql.connector - DEBUG - caching_sha2_password completed succesfully
+2025-03-20 18:41:50,694 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 18:41:50,906 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 1271
+2025-03-20 18:41:50,907 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 18:42:03,071 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 500 85
+2025-03-20 18:42:13,073 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 18:42:13,260 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 657
+2025-03-20 18:42:13,260 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 18:42:24,402 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 None
+2025-03-20 18:42:42,715 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 18:42:42,943 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 909
+2025-03-20 18:42:42,943 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 18:42:55,109 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 500 85
+2025-03-20 18:43:05,130 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 18:43:05,376 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 441
+2025-03-20 18:43:05,376 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 18:43:07,109 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 None
+2025-03-20 18:43:08,719 - APP - app_logger - ERROR - MI ERROR: error_sistema: raise get_exception(packet) - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\mysql\connector\connection.py - 635 - _handle_result: App: 1, Usuario: usuario_dev, Error: 0 - OK., debug: insertando en tabla: fac + proceso.Exception, parametros: [<app.config.servicios_equinsa.EquinsaService object at 0x0000020534313E90>] - ERROR: 1406 - 1406 (22001): Data too long for column 'pag' at row 133 - LOCALIZACION: raise get_exception(packet) - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\mysql\connector\connection.py - 635 - _handle_result)
+2025-03-20 18:43:08,732 - APP - app_logger - ERROR - MI ERROR: generic_exception_handler: raise get_exception(packet) - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\mysql\connector\connection.py - 635 - _handle_result: App: 1, Usuario: Vamos a ver1, Error: -1 - 1406 (22001): Data too long for column 'pag' at row 133, debug: , parametros: [] - ERROR: 1406 - 1406 (22001): Data too long for column 'pag' at row 133 - LOCALIZACION: raise get_exception(packet) - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\mysql\connector\connection.py - 635 - _handle_result)
+2025-03-20 18:51:09,606 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 18:51:09,793 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 30
+2025-03-20 18:51:10,772 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-20 18:51:10,772 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-20 18:51:10,772 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-20 18:51:10,901 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-20 18:51:24,749 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 18:51:24,984 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 30
+2025-03-20 18:52:31,118 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 18:52:31,381 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 31
+2025-03-20 18:52:55,388 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 18:52:55,644 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 28
+2025-03-20 19:04:58,444 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-20 19:04:58,444 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-20 19:04:58,444 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-20 19:04:58,583 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-20 19:05:03,864 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-20 19:05:03,864 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-20 19:05:03,865 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-20 19:05:03,968 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-20 19:05:14,885 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-20 19:05:14,886 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-20 19:05:14,886 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-20 19:05:15,000 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-20 19:05:18,345 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 19:05:18,609 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 28
+2025-03-20 19:06:29,214 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-20 19:06:29,214 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-20 19:06:29,214 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-20 19:06:29,311 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-20 19:06:40,223 - APP - mysql.connector - DEBUG - Building SSL context
+2025-03-20 19:06:40,256 - APP - mysql.connector - DEBUG - Switching to SSL
+2025-03-20 19:06:40,264 - APP - mysql.connector - DEBUG - SSL has been enabled
+2025-03-20 19:06:40,264 - APP - mysql.connector - DEBUG - Starting authorization phase
+2025-03-20 19:06:40,264 - APP - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-03-20 19:06:40,264 - APP - mysql.connector - INFO - package: mysql.connector.plugins
+2025-03-20 19:06:40,264 - APP - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-03-20 19:06:40,264 - APP - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-03-20 19:06:40,264 - APP - mysql.connector - DEBUG - Exchanging further packets
+2025-03-20 19:06:40,264 - APP - mysql.connector - DEBUG - caching_sha2_password completed succesfully
+2025-03-20 19:06:40,268 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 19:06:40,449 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 441
+2025-03-20 19:06:40,456 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 19:06:42,082 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 None
+2025-03-20 19:06:53,468 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 19:06:53,724 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 1857
+2025-03-20 19:06:53,726 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 19:07:05,903 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 500 85
+2025-03-20 19:07:15,908 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 19:07:16,322 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 169
+2025-03-20 19:07:16,322 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 19:07:28,721 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 500 85
+2025-03-20 19:07:38,728 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 19:07:38,988 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 213
+2025-03-20 19:07:38,988 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-20 19:07:51,114 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 500 85
+2025-03-20 19:08:01,149 - APP - app_logger - ERROR - MI ERROR: generic_exception_handler: return self.serializer.to_python( - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\pydantic\type_adapter.py - 527 - dump_python: App: 1, Usuario: Vamos a ver1, Error: -1 - Unable to serialize unknown type: <class 'app.config.servicios_equinsa.EquinsaService'>, debug: , parametros: [] - ERROR: Unable to serialize unknown type: <class 'app.config.servicios_equinsa.EquinsaService'> - Unable to serialize unknown type: <class 'app.config.servicios_equinsa.EquinsaService'> - LOCALIZACION: return self.serializer.to_python( - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\pydantic\type_adapter.py - 527 - dump_python)

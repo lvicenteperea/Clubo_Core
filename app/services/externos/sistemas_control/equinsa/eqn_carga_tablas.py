@@ -8,23 +8,6 @@ from app.config.db_clubo import get_db_connection_mysql, close_connection_mysql
 from app.utils.InfoTransaccion import InfoTransaccion
 from app.config.settings import settings
 
-"""
-truncate table `clubo-data`._hissesbd;
-truncate table `clubo-data`._ver;
-truncate table `clubo-data`.c_tipapa;
-truncate table `clubo-data`.c_ins;
-truncate table `clubo-data`.apa;
-
-
-SELECT * FROM `clubo-data`._hissesbd;
-SELECT * FROM `clubo-data`._ver;
-SELECT * FROM `clubo-data`.c_tipapa;
-SELECT * FROM `clubo-data`.c_ins;
-SELECT * FROM `clubo-data`.apa;
--- 'apa', 'c_tipsop', 'apeman', 'c_condetcob', 'c_contot', 'c_estpre', 'c_forpag', 'c_gruparcon', 'c_gruper', 'c_parcon', 'c_per', 'c_resautpro', 'c_subtipapa', 'c_tipinc', 'c_tipmanpro', 'c_tipopeaud', 'c_tipopecaj', 'c_tippro', 'camapa', 'capima', 'car', 'cli', 'grucli', 'cligrucli', 'ope', 'tur', 
-
-SELECT * FROM `clubo-data`.c_subtipapa
-"""
 # -------------------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------------------
 def proceso(param: InfoTransaccion) -> list:
@@ -38,11 +21,10 @@ def proceso(param: InfoTransaccion) -> list:
     try:
         # Conectar a la base de datos
         conn_mysql = get_db_connection_mysql()
-        cursor_mysql = conn_mysql.cursor(dictionary=True)
 
         # tablas = recupera_tablas(param, equinsa)
         # tablas = ['_hissesbd', '_ver', 'c_tipapa', 'c_ins', 'apa', 'c_tipsop', 'apeman', 'c_condetcob', 'c_contot', 'c_estpre', 'c_forpag', 'c_gruparcon', 'c_gruper', 'c_parcon', 'c_per', 'c_resautpro', 'c_subtipapa', 'c_tipinc', 'c_tipmanpro', 'c_tipopeaud', 'c_tipopecaj', 'c_tippro', 'camapa', 'capima', 'car', 'cli', 'grucli', 'cligrucli', 'ope', 'tur', 'cob', 'comeve', 'con', 'decperope', 'lispre', 'tar', 'rec', 'hor', 'profuecir', 'proencir', 'grupro', 'detcob', 'opecaj', 'detopecaj', 'plazon', 'zon', 'entsal', 'enu', 'envinc', 'equgruproins', 'res', 'fac', 'fes', 'frahor', 'fratar', 'inc', 'inssis', 'lisnegmat', 'lisnegpro', 'manpro', 'remtarcre', 'opetarcre', 'parcon', 'paslispre', 'perope', 'polacc', 'regaud', 'regcon', 'regpreusu', 'remrecdom', 'traren', 'renpro', 'tarpro', 'tottur', 'traerrsis', 'vehcli', 'veropepro']
-        tablas = ['cob']
+        tablas = ['cob', 'entsal', 'profuecir', 'regcon', 'tottur']
         
         for tabla in tablas:
             columnas = recupera_columnas(param, equinsa, tabla)
@@ -53,7 +35,7 @@ def proceso(param: InfoTransaccion) -> list:
                 """Genera un SELECT dinámico con las columnas dadas"""
                 insert_query = generar_insert(param, tabla, columnas)
 
-                insert_datos(param, cursor_mysql, tabla, insert_query, datos)
+                insert_datos(param, conn_mysql, tabla, insert_query, datos)
                 conn_mysql.commit()
 
             time.sleep(10)
@@ -66,7 +48,7 @@ def proceso(param: InfoTransaccion) -> list:
 
     finally:
         param.debug = "cierra conn"
-        close_connection_mysql(conn_mysql, cursor_mysql)
+        close_connection_mysql(conn_mysql, None)
     
 # -------------------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------------------
@@ -104,6 +86,7 @@ def obtener_datos_origen(param: InfoTransaccion, equinsa, columnas, tabla):
         datos = datos_equinsa["rows"]
     else:
         datos = []
+    
     return datos        
 
 # -------------------------------------------------------------------------------------------
@@ -120,7 +103,7 @@ def generar_insert(param: InfoTransaccion, tabla, columnas):
 
 # -------------------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------------------
-def insert_datos(param: InfoTransaccion, cursor_mysql, tabla, insert_query, datos_dict):
+def insert_datos(param: InfoTransaccion, conn_mysql, tabla, insert_query, datos_dict):
     """Ejecuta el INSERT en la base de datos MySQL destino"""
     param.debug = f"insertando en tabla: {tabla}"
 
@@ -129,13 +112,20 @@ def insert_datos(param: InfoTransaccion, cursor_mysql, tabla, insert_query, dato
         columnas = list(datos_dict_ok[0].keys())
         datos = [tuple(row.get(col, None) for col in columnas) for row in datos_dict_ok]
 
-        imprime([datos, len(datos), insert_query], f"= {tabla}", 2)
         instruccion = insert_query.replace(", sql,", ", `sql`,")
         instruccion = instruccion.replace(", mod,", ", `mod`,")
 
-        cursor_mysql.executemany(instruccion, datos)
+        # Tamaño del lote (1000 registros por lote)
+        tamano_lote = 1000
 
-        print(f"{cursor_mysql.rowcount} registros insertados en {tabla}.")
+        cursor_mysql = conn_mysql.cursor(dictionary=True)
+        # Insertar en lotes
+        for i in range(0, len(datos), tamano_lote):
+            lote = datos[i:i + tamano_lote]  # Obtener un lote de 1000 registros
+            cursor_mysql.executemany(instruccion, lote)  # Insertar el lote
+            conn_mysql.commit()  # Confirmar la transacción
+            print(f"Insertados {len(lote)} registros. Total: {i + len(lote)}/{len(datos)}  en {tabla}")
+        cursor_mysql.close()
     else:
         print(f"0 registros insertados en {tabla}.")
 
@@ -165,8 +155,9 @@ def convertir_fecha(fecha_str):
             # Si solo es fecha sin hora
             dt = datetime.strptime(fecha_str, "%d/%m/%Y")
             return dt.strftime("%Y-%m-%d")
+        
     except Exception as e:
-        print(f"Error convirtiendo fecha {fecha_str}: {e}")
+        # print(f"Error convirtiendo fecha {fecha_str}: {e}")
         return fecha_str  # Devuelve la original si falla
 
 

@@ -6,3 +6,4 @@ app/ficheros/datos/alergenos/versiones
 app/ficheros/datos/tarifas_a_TPV/tarifas_20*.*
 .codegpt
 *__pycache__*
+app/logs/app.log

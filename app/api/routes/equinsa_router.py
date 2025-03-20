@@ -91,7 +91,6 @@ async def apk_consultas(request: Request,
 ):
 
     tiempo = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    print("Tiempos!!!-----------------------------------------", tiempo)
     try:
         # --------------------------------------------------------------------------------
         # Validaciones y construcción Básica
