@@ -2658,3 +2658,76 @@
 2025-03-20 19:07:38,988 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
 2025-03-20 19:07:51,114 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 500 85
 2025-03-20 19:08:01,149 - APP - app_logger - ERROR - MI ERROR: generic_exception_handler: return self.serializer.to_python( - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\pydantic\type_adapter.py - 527 - dump_python: App: 1, Usuario: Vamos a ver1, Error: -1 - Unable to serialize unknown type: <class 'app.config.servicios_equinsa.EquinsaService'>, debug: , parametros: [] - ERROR: Unable to serialize unknown type: <class 'app.config.servicios_equinsa.EquinsaService'> - Unable to serialize unknown type: <class 'app.config.servicios_equinsa.EquinsaService'> - LOCALIZACION: return self.serializer.to_python( - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\pydantic\type_adapter.py - 527 - dump_python)
+2025-03-20 19:13:35,837 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-20 19:13:35,837 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-20 19:13:35,838 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-20 19:13:36,050 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-24 17:00:53,509 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-24 17:00:53,509 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-24 17:00:53,509 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-24 17:00:56,828 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-24 17:01:40,097 - APP - mysql.connector - DEBUG - Building SSL context
+2025-03-24 17:01:40,183 - APP - mysql.connector - DEBUG - Switching to SSL
+2025-03-24 17:01:40,201 - APP - mysql.connector - DEBUG - SSL has been enabled
+2025-03-24 17:01:40,201 - APP - mysql.connector - DEBUG - Starting authorization phase
+2025-03-24 17:01:40,201 - APP - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-03-24 17:01:40,201 - APP - mysql.connector - INFO - package: mysql.connector.plugins
+2025-03-24 17:01:40,201 - APP - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-03-24 17:01:40,201 - APP - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-03-24 17:01:40,202 - APP - mysql.connector - DEBUG - Exchanging further packets
+2025-03-24 17:01:40,202 - APP - mysql.connector - DEBUG - caching_sha2_password completed succesfully
+2025-03-24 17:01:40,251 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-24 17:01:40,588 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 1271
+2025-03-24 17:01:40,593 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-24 17:01:52,732 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 500 85
+2025-03-24 17:02:02,740 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-24 17:02:03,010 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 909
+2025-03-24 17:02:03,014 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-24 17:02:15,156 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 500 85
+2025-03-24 17:02:25,159 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-24 17:02:25,374 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 1857
+2025-03-24 17:02:25,376 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-24 17:02:37,538 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 500 85
+2025-03-24 17:02:47,543 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-24 17:02:47,748 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 169
+2025-03-24 17:02:47,751 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-24 17:02:59,929 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 500 85
+2025-03-24 17:03:09,933 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-24 17:03:10,150 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 213
+2025-03-24 17:03:10,153 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-24 17:03:22,450 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 500 85
+2025-03-24 17:03:32,778 - APP - app_logger - ERROR - MI ERROR: generic_exception_handler: return self.serializer.to_python( - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\pydantic\type_adapter.py - 527 - dump_python: App: 1, Usuario: Vamos a ver1, Error: -1 - Unable to serialize unknown type: <class 'app.config.servicios_equinsa.EquinsaService'>, debug: , parametros: [] - ERROR: Unable to serialize unknown type: <class 'app.config.servicios_equinsa.EquinsaService'> - Unable to serialize unknown type: <class 'app.config.servicios_equinsa.EquinsaService'> - LOCALIZACION: return self.serializer.to_python( - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\pydantic\type_adapter.py - 527 - dump_python)
+2025-03-24 18:05:20,937 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-24 18:05:20,937 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-24 18:05:20,938 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-24 18:05:21,182 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-03-24 18:05:23,464 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-24 18:05:23,861 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 30
+2025-03-24 18:05:44,943 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-24 18:05:45,524 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 None
+2025-03-24 18:06:28,154 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-24 18:06:28,407 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 6032
+2025-03-24 18:06:54,629 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-24 18:06:54,857 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 None
+2025-03-24 18:07:13,086 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-24 18:07:13,419 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 1153
+2025-03-24 18:07:25,112 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-24 18:07:25,336 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 1569
+2025-03-24 18:17:21,449 - APP - mysql.connector - DEBUG - Building SSL context
+2025-03-24 18:17:21,563 - APP - mysql.connector - DEBUG - Switching to SSL
+2025-03-24 18:17:21,570 - APP - mysql.connector - DEBUG - SSL has been enabled
+2025-03-24 18:17:21,570 - APP - mysql.connector - DEBUG - Starting authorization phase
+2025-03-24 18:17:21,570 - APP - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-03-24 18:17:21,571 - APP - mysql.connector - DEBUG - Exchanging further packets
+2025-03-24 18:17:21,571 - APP - mysql.connector - DEBUG - caching_sha2_password completed succesfully
+2025-03-24 18:17:21,580 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-24 18:17:21,821 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 1271
+2025-03-24 18:17:21,824 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-24 18:17:33,955 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 500 85
+2025-03-24 18:17:43,958 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-24 18:17:44,227 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 909
+2025-03-24 18:17:44,230 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-03-24 18:17:47,967 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-03-24 18:17:47,968 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-03-24 18:17:47,968 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-03-24 18:17:48,174 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>

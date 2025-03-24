@@ -79,15 +79,56 @@ def recupera_columnas(param: InfoTransaccion, equinsa, tabla: str) -> list:
 def obtener_datos_origen(param: InfoTransaccion, equinsa, columnas, tabla):
     param.debug = f"obtener_datos_origen {tabla}"
     columnas_str = ", ".join(columnas)
-    sql_query = f"SELECT {columnas_str} FROM {tabla};"
+    datos = []
 
+    sql_query = f"SELECT count(*) FROM {tabla};"
     datos_equinsa = equinsa.execute_sql_command(sql_query)
-    if datos_equinsa:
-        datos = datos_equinsa["rows"]
+    registros = 0
+    imprime([datos_equinsa], '*   COUNT')
+    z = 1/0
+
+    if registros > 30000:
+        page_number = 1
+        while True:
+            datos_pagina = obtener_datos_origen_paginados(param, equinsa, columnas_str, tabla, page_number)
+            if not datos_pagina:
+                break
+            datos.extend(datos_pagina)
+            page_number += 1
     else:
-        datos = []
+        sql_query = f"SELECT {columnas_str} FROM {tabla};"
+
+        datos_equinsa = equinsa.execute_sql_command(sql_query)
+        if datos_equinsa:
+            datos = datos_equinsa["rows"]
+        else:
+            datos = []
     
     return datos        
+
+# -------------------------------------------------------------------------------------------
+def obtener_datos_origen_paginados(param: InfoTransaccion, equinsa, columnas_str, tabla, page_number):
+    page_size = 10000
+    param.debug = f"obtener_datos_origen_paginados {tabla}"
+    
+    # Cálculo de OFFSET (SQL Server empieza en 0)
+    offset = (page_number - 1) * page_size
+    
+    # Query con paginación
+    sql_query = f"""SELECT {columnas_str} 
+                      FROM {tabla}
+                     ORDER BY 1,2,3,4  -- ¡Importante! Necesitas un campo para ordenar (ajústalo)
+                    OFFSET {offset} ROWS
+                     FETCH NEXT {page_size} ROWS ONLY;"""
+    
+    datos_equinsa = equinsa.execute_sql_command(sql_query)
+    return datos_equinsa.get("rows", []) if datos_equinsa else []
+
+
+
+
+
+
 
 # -------------------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------------------
