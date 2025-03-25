@@ -9,6 +9,7 @@
 from fastapi import FastAPI, HTTPException #, Request  #, Depends
 from fastapi.middleware.cors import CORSMiddleware
 # from fastapi.responses import JSONResponse
+from fastapi.exceptions import RequestValidationError
 
 # from app.api.routes import router as api_router
 from app.api.routes.auth_router import router as auth_router
@@ -17,12 +18,11 @@ from app.api.routes.equinsa_router import router as equinsa_router
 from app.api.routes.skidata_router import router as skidata_router
 
 
-
 from app.middleware.auth import AuthMiddleware
 import json 
 
 
-from app.exceptions import http_exception_handler, json_decode_error_handler, generic_exception_handler, mi_exception_handler, type_error_handler
+from app.exceptions import http_exception_handler, json_decode_error_handler, generic_exception_handler, mi_exception_handler, type_error_handler, validation_exception_handler
 from app.config.settings import settings
 from app.utils.mis_excepciones import MiException
 from app.middleware.log_tiempos_respuesta import log_tiempos_respuesta
@@ -66,6 +66,7 @@ app.add_exception_handler(HTTPException, http_exception_handler)
 app.add_exception_handler(json.JSONDecodeError, json_decode_error_handler)
 app.add_exception_handler(Exception, generic_exception_handler)
 app.add_exception_handler(TypeError, type_error_handler)
+app.add_exception_handler(RequestValidationError, validation_exception_handler)
 
 
 

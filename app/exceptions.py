@@ -1,8 +1,11 @@
 from fastapi import HTTPException, Request
 from fastapi.responses import JSONResponse
+from fastapi.exceptions import RequestValidationError
 import json
 import traceback
 from datetime import datetime
+from starlette.status import HTTP_422_UNPROCESSABLE_ENTITY
+
 
 from app.utils.mis_excepciones import MiException
 from app.utils.InfoTransaccion import InfoTransaccion
@@ -26,6 +29,29 @@ async def mi_exception_handler(request: Request, exc: MiException):
         status_code=status_code,
         content={"status_code": exc.status_code, "message": mensaje}
     )
+
+# ---------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------
+async def validation_exception_handler(request: Request, exc: RequestValidationError):
+    imprime([f"ERROR GENERAL: {str(exc)}"], "=   validation_exception_handler   ")
+    errors = exc.errors()
+    detalles = []
+
+    for err in errors:
+        detalles.append({
+            "campo": err.get("loc", []),
+            "mensaje": err.get("msg"),
+            "tipo": err.get("type")
+        })
+
+    return JSONResponse(
+        status_code=HTTP_422_UNPROCESSABLE_ENTITY,
+        content={"error": "Error de validación", "detalles": detalles}
+    )
+
+
+
+
 
 # ---------------------------------------------------------------------------------------
 # ---------------------------------------------------------------------------------------

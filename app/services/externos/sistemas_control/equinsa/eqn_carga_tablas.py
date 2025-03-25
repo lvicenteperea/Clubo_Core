@@ -17,7 +17,6 @@ def proceso(param: InfoTransaccion) -> list:
     equinsa = EquinsaService(carpark_id="1237")
     param.parametros.append(equinsa)
 
-
     try:
         # Conectar a la base de datos
         conn_mysql = get_db_connection_mysql()
@@ -83,18 +82,11 @@ def obtener_datos_origen(param: InfoTransaccion, equinsa, columnas, tabla):
 
     sql_query = f"SELECT count(*) FROM {tabla};"
     datos_equinsa = equinsa.execute_sql_command(sql_query)
-    registros = 0
-    imprime([datos_equinsa], '*   COUNT')
-    z = 1/0
+    valor_str = datos_equinsa["rows"][0]["column1"]
+    registros = int(valor_str) if int(valor_str) else 0
 
     if registros > 30000:
-        page_number = 1
-        while True:
-            datos_pagina = obtener_datos_origen_paginados(param, equinsa, columnas_str, tabla, page_number)
-            if not datos_pagina:
-                break
-            datos.extend(datos_pagina)
-            page_number += 1
+        datos = obtener_datos_origen_paginados(param, equinsa, columnas_str, tabla)
     else:
         sql_query = f"SELECT {columnas_str} FROM {tabla};"
 
@@ -107,28 +99,33 @@ def obtener_datos_origen(param: InfoTransaccion, equinsa, columnas, tabla):
     return datos        
 
 # -------------------------------------------------------------------------------------------
-def obtener_datos_origen_paginados(param: InfoTransaccion, equinsa, columnas_str, tabla, page_number):
+def obtener_datos_origen_paginados(param: InfoTransaccion, equinsa, columnas_str, tabla):
     page_size = 10000
+    page_number = 1
     param.debug = f"obtener_datos_origen_paginados {tabla}"
+    datos = []
+
+    while True:
+        # Cálculo de OFFSET (SQL Server empieza en 0)
+        offset = (page_number - 1) * page_size
     
-    # Cálculo de OFFSET (SQL Server empieza en 0)
-    offset = (page_number - 1) * page_size
+        # Query con paginación
+        sql_query = f"""SELECT {columnas_str} 
+                        FROM {tabla}
+                        ORDER BY 1,2,3,4  -- ¡Importante! Necesitas un campo para ordenar (ajústalo)
+                        OFFSET {offset} ROWS
+                        FETCH NEXT {page_size} ROWS ONLY;"""
+        
+        datos_equinsa = equinsa.execute_sql_command(sql_query)
+        datos_pagina  = datos_equinsa.get("rows", []) if datos_equinsa else []
     
-    # Query con paginación
-    sql_query = f"""SELECT {columnas_str} 
-                      FROM {tabla}
-                     ORDER BY 1,2,3,4  -- ¡Importante! Necesitas un campo para ordenar (ajústalo)
-                    OFFSET {offset} ROWS
-                     FETCH NEXT {page_size} ROWS ONLY;"""
-    
-    datos_equinsa = equinsa.execute_sql_command(sql_query)
-    return datos_equinsa.get("rows", []) if datos_equinsa else []
+        if not datos_pagina:
+            break
 
+        datos.extend(datos_pagina)
+        page_number += 1
 
-
-
-
-
+    return datos
 
 # -------------------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------------------
