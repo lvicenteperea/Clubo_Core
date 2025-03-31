@@ -15,7 +15,7 @@ def proceso(param: InfoTransaccion) -> list:
     param.debug = "proceso"
     # punto_venta = param.parametros[1]
     equinsa = EquinsaService(carpark_id="1237")
-    param.parametros.append(equinsa)
+    # param.parametros.append(equinsa)
 
     try:
         # Conectar a la base de datos
