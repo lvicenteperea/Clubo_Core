@@ -103,7 +103,9 @@ async def apk_consultas(request: Request,
         # --------------------------------------------------------------------------------
         # Servicio
         # --------------------------------------------------------------------------------
+        imprime(["Hola"], "-")
         equinsa = EquinsaService(carpark_id="1237")
+        imprime(["Adios"], "-")
 
         # Ejecutar una consulta SQL
         sql_query = param.parametros[0] # "SELECT * FROM ope"

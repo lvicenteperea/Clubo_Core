@@ -869,3 +869,36 @@
 2025-03-25 19:21:39,520 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
 2025-03-25 19:22:28,130 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
 2025-03-25 19:22:28,390 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 200 781
+2025-04-05 12:09:42,315 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-04-05 12:09:42,315 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-04-05 12:09:42,315 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-04-05 12:09:42,497 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-04-05 12:21:43,085 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-04-05 12:21:43,085 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-04-05 12:21:43,085 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-04-05 12:21:43,181 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-04-05 12:21:46,351 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-04-05 12:21:58,497 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 500 85
+2025-04-05 12:21:58,547 - APP - app_logger - ERROR - MI ERROR: generic_exception_handler: raise ResponseValidationError( - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\fastapi\routing.py - 155 - serialize_response: App: 1, Usuario: Vamos a ver1, Error: -1 - 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None, 'url': 'https://errors.pydantic.dev/2.10/v/model_attributes_type'}
+, debug: , parametros: [] - ERROR: 0 - 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None, 'url': 'https://errors.pydantic.dev/2.10/v/model_attributes_type'}
+ - LOCALIZACION: raise ResponseValidationError( - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\fastapi\routing.py - 155 - serialize_response)
+2025-04-05 12:26:52,074 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-04-05 12:27:04,206 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 500 85
+2025-04-05 12:27:04,206 - APP - app_logger - ERROR - MI ERROR: generic_exception_handler: raise ResponseValidationError( - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\fastapi\routing.py - 155 - serialize_response: App: 1, Usuario: Vamos a ver1, Error: -1 - 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None, 'url': 'https://errors.pydantic.dev/2.10/v/model_attributes_type'}
+, debug: , parametros: [] - ERROR: 0 - 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None, 'url': 'https://errors.pydantic.dev/2.10/v/model_attributes_type'}
+ - LOCALIZACION: raise ResponseValidationError( - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\fastapi\routing.py - 155 - serialize_response)
+2025-04-05 12:28:55,371 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-04-05 12:28:55,372 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-04-05 12:28:55,372 - APP - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-04-05 12:28:55,464 - APP - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-04-05 12:28:58,661 - APP - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): tunel.equinsaparking.com:443
+2025-04-05 12:29:10,793 - APP - urllib3.connectionpool - DEBUG - https://tunel.equinsaparking.com:443 "POST /EPCloud/api/parking/1237/system/sql HTTP/1.1" 500 85
+2025-04-05 12:29:10,806 - APP - app_logger - ERROR - MI ERROR: generic_exception_handler: raise ResponseValidationError( - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\fastapi\routing.py - 155 - serialize_response: App: 1, Usuario: Vamos a ver1, Error: -1 - 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None, 'url': 'https://errors.pydantic.dev/2.10/v/model_attributes_type'}
+, debug: , parametros: [] - ERROR: 0 - 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None, 'url': 'https://errors.pydantic.dev/2.10/v/model_attributes_type'}
+ - LOCALIZACION: raise ResponseValidationError( - C:\Users\lvice\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local_packages\Python312\site_packages\fastapi\routing.py - 155 - serialize_response)
